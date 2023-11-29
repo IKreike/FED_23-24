@@ -16,13 +16,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Iris Kreike
 
   #### Je startniveau:
   hier je startniveau (kies uit zwart, rood óf blauw)
+  blauw
 
   #### Je focus:
   hier je focus (kies uit responsive óf surface plane)
+  ik heb nog steeds werkelijk geen idee wat deze dingen betekenen
  
 </details>
 
@@ -104,10 +106,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - svg gebruiken
+  - html helemaal afmaken voor stijling (ook andere pagina)
+  - transform gebruiken voor artikelen (waaaaaarrrrooooom)
+  - datetime tag gebruiken
+  - eerste afbeelding en titel in header zetten (waaarom???? das toch nie handig)
+  - nnth of type gebruiken (gaat dat niet met die andere pagina fucken?)
 
 </details>
 

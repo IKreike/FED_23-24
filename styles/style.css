@@ -4,22 +4,20 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*,
-*::after,
-*::before {
+* {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 /* html { line-sizing: normal; }; */
 body {
-	margin: 0;
+	overflow-x: hidden;
 }
 
-;
-
-[hidden] {
+/* [hidden] {
 	display: none;
-}
+} */
 
 
 
@@ -31,11 +29,11 @@ body {
 /*********************/
 :root {
 	/* startje */
-	--color-text: #111;
-	--color-background: #686868;
-	--brand-color: #7812c7;
-	--color-secundair-background: white;
-	--color-links:orange;
+	--color-text: rgb(0, 0, 0);
+	--color-background: rgb(236, 235, 235);
+	--brand-color: rgb(51, 18, 140);
+	--color-secundair-background: rgb(255, 255, 255);
+	--color-links:rgb(238, 122, 48);
 	--color-niet:rgba(0, 0, 0, 0);
 	--display-text: "halyard-display", sans-serif;
 	--large-margin: 4em;
@@ -68,11 +66,6 @@ a {
 
 
 /* jouw code */
-header {
-	background-color: var(--color-secundair-background);
-	background-color: blue;
-}
-
 main {
 	background-color: var(--color-background);
 }
@@ -86,44 +79,109 @@ h2 {
 	font-weight: 700;
 }
 
-
-header {
-	background-image: url('../images/main-page-pic.jpeg');
-	/* background-color: var(--brand-color); */
-	color: var(--color-secundair-background);
+h1{
+	font-size: 2.5em;
+}
+h2 {
+	font-size: 2em;
 }
 
+a{
+	color: var(--color-text);
+	/* miss die pijltjes hier ook bijvoegen */
+
+}
+
+.button{
+	background-color: var(--color-links);
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+
+	text-transform: uppercase;
+	color: var(--color-secundair-background);
+	font-weight: 700;
+	text-decoration: none;
+}
 
 /****************/
 /* header styling */
 /****************/
 
-header button {
-	background-color: var(--color-secundair-background);
-
-	/* possible with variables */
+nav {
+	width: 100vw;
 	height: 4em;
-	width: 4em;
-	/* justify-content: flex-end; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	/* width: 100%; */
+	background-color: var(--color-secundair-background);
+	/* padding-top: 0; */
+	top: 0;
+	padding: .5em 1em;
 }
 
-header img {
+nav div {
+	display: flex;
+}
+
+nav img {
 	/* max-width: fit-content; */
-	max-height: 4em;
-	margin-right: auto;
+	/* width: 100%; */
+	height: 100%;
+	/* margin-right: auto; */
 	/* margin-top: 0; */
 }
 
-nav {
-	display: flex;
-	height: 4em;
-	justify-content: flex-end;
-	align-items: center;
-	position: fixed;
-	width: 100%;
+nav div button {
 	background-color: var(--color-secundair-background);
-	/* padding-top: 0; */
+	width: 3.5em;
+	height: 3.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+nav div button img {
+	width: 80%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* header {
+	width: 100vw;
+	background-image: url('../images/main-page-pic.jpeg');
+	object-fit: contain;
+	background-position: center;
+	background-repeat: none;
+} */
+
+header {
+	margin-top: 4em;
+	width: 100vw;
+	background-image: url('../images/main-page-pic.jpeg');
+	object-fit: contain;
+	background-position: center;
+	background-repeat: none;
+}
+
+header h1, header p {
+	color: var(--color-secundair-background);
+}
+
+/****************/
+/* section styling */
+/****************/
+
+/* section{
+	padding: 1em;
+} */
+
+
 
 
 
@@ -139,24 +197,15 @@ article {
 	/* background-color:var(--color-secundair-background); */
 	max-height: fit-content;
 	margin-top: 2em;
+	padding: 0 1em;
 	/* background-image: -moz-linear-gradient(var(--color-background)00%, var(--color-background) 40%, var(--color-secundair-background)40%, var(--color-secundair-background) 100%); */
 	/* background-image: -moz-linear-gradient(red, yellow); */
 	background-image: linear-gradient(var(--color-niet) 30%, var(--color-secundair-background)30%);
 	padding-bottom: 1em;
 }
 
-
-/* de div zou voor de opmaak moeten zijn om het plaatje van de tekst te scheiden om de tekst te kunnen transformen */
-article div {
-	padding: 1em;
-}
-
 article img {
-	/* grid-row: 1 span2; */
-	/* max-height: 60px; */
-	/* grid-row:1; */
-	max-width: 90%;
-	margin: 5vw;
+	width: 100%;
 	height: 15em;
 }
 
@@ -177,7 +226,7 @@ h3 {
 	margin: 0;
 }
 
-article a{
+article a {
 	font-weight: 700;
 	color: var(--color-links);
 	/* font-size: 1.2em; */
@@ -186,6 +235,17 @@ article a{
 	text-transform: uppercase;
 }
 
+
+/****************/
+/* other article styling */
+/****************/
+
+.filled{
+	background-color: var(--color-secundair-background);
+	background-image: none;
+	padding: 1em;
+	margin: 1em;
+}
 
 
 
@@ -214,3 +274,34 @@ section:nth-child(1) a {
 header section{
 	margin-top:4em;
 } */
+
+/****************/
+/* rozen */
+/****************/
+
+section:nth-child(3){
+	background-color: var(--color-secundair-background);
+	background-image: none;
+	margin-top:1em;
+}
+
+
+
+/****************/
+/* potweb */
+/****************/
+
+section:nth-child(5){
+	background-color: var(--color-secundair-background);
+	background-image: none;
+	margin-top:1em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+iframe{
+	width: 90vw;
+	padding: 0;
+	/* height: fit-content; */
+	/* height: 4em; */
+}

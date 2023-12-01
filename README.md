@@ -20,12 +20,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Je startniveau:
   hier je startniveau (kies uit zwart, rood óf blauw)
-  blauw
+  blauw (miss rood? sta er niet tegen ofzo ben er gewoon niet goed in)
 
   #### Je focus:
   hier je focus (kies uit responsive óf surface plane)
   ik heb nog steeds werkelijk geen idee wat deze dingen betekenen
  
+  doe maar surface plane, klinkt leuker met animaties en darkmode enzo
 </details>
 
 
@@ -39,6 +40,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.royalfloraholland.com/ 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
@@ -141,10 +143,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - responsiveness article images gefict
+  - bug links rechts scrollen pagina
+  - hulp main page pic
+  - 
 
 </details>
 

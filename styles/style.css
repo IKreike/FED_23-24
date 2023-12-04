@@ -29,9 +29,9 @@ body {
 	--color-background: rgb(236, 235, 235);
 	--brand-color: rgb(51, 18, 140);
 	--color-secundair-background: rgb(255, 255, 255);
-	--color-links:rgb(238, 122, 48);
-	--color-niet:rgba(0, 0, 0, 0);
-	--color-accent:rgb(92, 198, 141);
+	--color-links: rgb(238, 122, 48);
+	--color-niet: rgba(0, 0, 0, 0);
+	--color-accent: rgb(92, 198, 141);
 	--display-text: "halyard-display", sans-serif;
 	--large-margin: 4em;
 	--small-margin: 2em;
@@ -70,7 +70,7 @@ main {
 }
 
 footer {
-	background-color: var(--brand-color);
+	background-color: var(--color-background);
 }
 
 h1,
@@ -78,36 +78,37 @@ h2 {
 	font-weight: 700;
 }
 
-h1{
+h1 {
 	font-size: 2.5em;
 }
+
 h2 {
 	font-size: 2em;
 }
 
-a{
+a {
 	color: var(--color-text);
 	padding: 1em;
 	/* miss die pijltjes hier ook bijvoegen */
 }
 
-/* De code voor de pijltjes voot de links */
-a.groen::before{
+/* De code voor de pijltjes voor de links */
+a.groen::before {
 	content: url('/images/pijltje-wit.svg');
 	width: 1em;
 	height: 1em;
-	margin-right: 0.5em;
+	margin-right: 2em;
 }
 
-a.oranje::before{
+a.oranje::before {
 	content: url('/images/pijltje-orange.svg');
 	width: 1em;
 	height: 1em;
-	margin-right: 0.5em;
+	margin-right: 1em;
 }
 
 
-.button{
+.button {
 	background-color: var(--color-links);
 	padding-left: 1em;
 	padding-right: 1em;
@@ -120,7 +121,7 @@ a.oranje::before{
 	text-decoration: none;
 }
 
-p{
+p {
 	/* de letters moeten wat verder uit elkaar */
 	/* letter-spacing: 1px; */
 	font-family: "halyard-text", sans-serif;
@@ -167,11 +168,12 @@ nav div button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border: none;
 }
 
 nav div button img {
-	width: 80%;
-	height: 80%;
+	width: 60%;
+	height: 60%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -191,16 +193,21 @@ header {
 	padding: 1em;
 }
 
-header h1, header p {
+header h1,
+header p {
 	color: var(--color-secundair-background);
 }
 
-header p{
+header p {
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
 
-
+li {
+	list-style-position: inside;
+	padding: .5em;
+	list-style: none;
+}
 
 
 
@@ -253,7 +260,7 @@ article a {
 	text-transform: uppercase;
 }
 
-article div{
+article div {
 	padding: 1em 0;
 }
 
@@ -262,7 +269,7 @@ article div{
 /* other article styling */
 /****************/
 
-.filled{
+.filled {
 	background-color: var(--color-secundair-background);
 	background-image: none;
 	padding: 1em;
@@ -275,12 +282,6 @@ article div{
 /****************/
 /* Frequently asked links */
 /****************/
-
-li {
-	list-style-position: inside;
-	padding: .5em;
-	list-style: none;
-}
 
 section:nth-child(1) {
 	background-color: var(--brand-color);
@@ -298,13 +299,12 @@ section:nth-child(1) a {
 /****************/
 section:nth-child(2) {
 	margin-top: 1em;
-	margin-bottom: 1em;
+	/* margin-bottom: 1em; */
 	/* margin: 1em; */
 }
-section:nth-child(2) h2{
-	/* margin-top: 1em;
-	margin-bottom: 1em; */
-	margin: 1em;
+
+section:nth-child(2) h2 {
+	margin: .5em;
 }
 
 
@@ -312,10 +312,10 @@ section:nth-child(2) h2{
 /* rozen */
 /****************/
 
-section:nth-child(3){
+section:nth-child(3) {
 	background-color: var(--color-secundair-background);
 	background-image: none;
-	margin-top:1em;
+	margin-top: 1em;
 }
 
 section:nth-child(3) p {
@@ -324,7 +324,7 @@ section:nth-child(3) p {
 }
 
 /* voor dat boogding wat niet wilt werken */
-section:nth-child(3) img:nth-child(1){
+section:nth-child(3) img:nth-child(1) {
 	background-color: var(--color-background);
 	height: 6em;
 	/* width:fit-content; */
@@ -336,7 +336,7 @@ section:nth-child(3) img:nth-child(1){
 /****************/
 /* column */
 /****************/
-section:nth-child(4) div{
+section:nth-child(4) div {
 	padding: 1em;
 	/* margin-top: 4em; */
 }
@@ -351,21 +351,21 @@ section:nth-child(4) p {
 /* potweb */
 /****************/
 
-section:nth-child(5){
+main section:nth-child(5) {
 	background-color: var(--color-secundair-background);
 	background-image: none;
-	margin-top:1em;
+	margin-top: 1em;
 	padding-left: 1em;
 	padding-right: 1em;
 }
 
-section:nth-child(5) p {
+main section:nth-child(5) p {
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
 
-iframe{
+iframe {
 	width: 90vw;
 	padding: 0;
 	/* height: fit-content; */
@@ -377,18 +377,101 @@ iframe{
 /* beurzen en evenementen */
 /****************/
 
-section:nth-child(6){
+section:nth-child(6) {
 	padding: 1em;
 	margin-top: 4em;
 }
 
-section:nth-child(6) p{
+section:nth-child(6) p {
 	padding-top: 1em;
 }
 
-section:nth-child(6) h2{
+section:nth-child(6) h2 {
 	padding-bottom: .5em;
 }
 
-/* bron icons header, moet nog op goede plek */
-/* <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> */
+
+/****************/
+/* floriday */
+/****************/
+
+section:nth-child(8) {
+	padding: 1em;
+	background-color: var(--brand-color);
+}
+
+
+/****************/
+/* footer */
+/****************/
+
+footer {
+	/* color: var(--color-secundair-background); */
+	text-decoration: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 5em 1fr 1fr auto auto;
+
+}
+
+footer li a {
+	/* color: var(--color-secundair-background); */
+	/* list-style: none; */
+	text-decoration: none;
+}
+
+/* footer li a p:nth-child(1){
+	font-weight: 700;
+} */
+footer p {
+	font-weight: 700;
+}
+
+/* proberen de li  op dezelfde lijn krijgen*/
+/* footer ul li a {
+	list-style-position: outside;
+} */
+
+/* footer a {
+	color: var(--color-links);
+} */
+
+
+
+/* ******** over royal floraholland ******** */
+footer ul:nth-of-type(1) {
+	grid-column: 1/2;
+	background-color: blue;
+	grid-row-start: 2;
+
+}
+
+/* ******** contact ******** */
+footer ul:nth-of-type(2) {
+	grid-column:2/3;
+	background-color: darkolivegreen;
+	/* width: 50vw; */
+	grid-row-start: 2;
+}
+
+/* footer ul:nth-of-type(2) {
+	grid-column: 1/3;
+} */
+
+footer ul:nth-of-type(3) {
+	grid-column:1/3;
+	background-color: red;
+	grid-row-start: 3;
+}
+
+footer section:nth-of-type(1){
+	grid-column:1/3;
+	background-color:hotpink;
+	grid-row-start: 4;
+}
+
+footer section:nth-of-type(2){
+	grid-column:1/3;
+	background-color:peru;
+	grid-row-start: 5;
+}

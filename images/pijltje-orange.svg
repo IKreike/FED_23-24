@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="9" fill="white">
+<g clip-path="url(#a)">
+<path fill="rgb(238, 122, 48)" d="M7.069 0H4.875v.375l5.688 3.375H0v1.5h10.563L4.875 8.625V9h2.194L13 5.4V3.6L7.069 0Z"/>
+</g><defs>
+<clipPath id="a">
+<rect width="9" height="13" y="9" stroke="white" rx="4.5" transform="rotate(-90 0 9)"/>
+</clipPath></defs></svg>

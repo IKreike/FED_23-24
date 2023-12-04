@@ -15,10 +15,6 @@ body {
 	overflow-x: hidden;
 }
 
-/* [hidden] {
-	display: none;
-} */
-
 
 
 
@@ -35,6 +31,7 @@ body {
 	--color-secundair-background: rgb(255, 255, 255);
 	--color-links:rgb(238, 122, 48);
 	--color-niet:rgba(0, 0, 0, 0);
+	--color-accent:rgb(92, 198, 141);
 	--display-text: "halyard-display", sans-serif;
 	--large-margin: 4em;
 	--small-margin: 2em;
@@ -65,7 +62,9 @@ a {
 
 
 
-/* jouw code */
+/****************/
+/* algemene styling */
+/****************/
 main {
 	background-color: var(--color-background);
 }
@@ -88,9 +87,25 @@ h2 {
 
 a{
 	color: var(--color-text);
+	padding: 1em;
 	/* miss die pijltjes hier ook bijvoegen */
-
 }
+
+/* De code voor de pijltjes voot de links */
+a.groen::before{
+	content: url('/images/pijltje-wit.svg');
+	width: 1em;
+	height: 1em;
+	margin-right: 0.5em;
+}
+
+a.oranje::before{
+	content: url('/images/pijltje-orange.svg');
+	width: 1em;
+	height: 1em;
+	margin-right: 0.5em;
+}
+
 
 .button{
 	background-color: var(--color-links);
@@ -104,6 +119,16 @@ a{
 	font-weight: 700;
 	text-decoration: none;
 }
+
+p{
+	/* de letters moeten wat verder uit elkaar */
+	/* letter-spacing: 1px; */
+	font-family: "halyard-text", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+
 
 /****************/
 /* header styling */
@@ -152,35 +177,28 @@ nav div button img {
 	align-items: center;
 }
 
-/* header {
-	width: 100vw;
-	background-image: url('../images/main-page-pic.jpeg');
-	object-fit: contain;
-	background-position: center;
-	background-repeat: none;
-} */
-
 header {
 	margin-top: 4em;
 	width: 100vw;
 	background-image: url('../images/main-page-pic.jpeg');
 	object-fit: contain;
-	background-position: center;
+	/* background-position: center; */
 	background-repeat: none;
+	background-position: top;
+	background-size: cover;
+	/* height: 400px; */
+	/* display: flex; */
+	padding: 1em;
 }
 
 header h1, header p {
 	color: var(--color-secundair-background);
 }
 
-/****************/
-/* section styling */
-/****************/
-
-/* section{
-	padding: 1em;
-} */
-
+header p{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
 
 
 
@@ -235,6 +253,10 @@ article a {
 	text-transform: uppercase;
 }
 
+article div{
+	padding: 1em 0;
+}
+
 
 /****************/
 /* other article styling */
@@ -255,14 +277,15 @@ article a {
 /****************/
 
 li {
-	/* plaatje pijltje invoegen */
-	list-style: url();
+	list-style-position: inside;
+	padding: .5em;
+	list-style: none;
 }
 
 section:nth-child(1) {
 	background-color: var(--brand-color);
 	color: var(--color-secundair-background);
-
+	padding: 1em;
 }
 
 section:nth-child(1) a {
@@ -270,10 +293,20 @@ section:nth-child(1) a {
 	text-decoration: none;
 }
 
-/* 
-header section{
-	margin-top:4em;
-} */
+/****************/
+/* laatste nieuws */
+/****************/
+section:nth-child(2) {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	/* margin: 1em; */
+}
+section:nth-child(2) h2{
+	/* margin-top: 1em;
+	margin-bottom: 1em; */
+	margin: 1em;
+}
+
 
 /****************/
 /* rozen */
@@ -285,6 +318,33 @@ section:nth-child(3){
 	margin-top:1em;
 }
 
+section:nth-child(3) p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+/* voor dat boogding wat niet wilt werken */
+section:nth-child(3) img:nth-child(1){
+	background-color: var(--color-background);
+	height: 6em;
+	/* width:fit-content; */
+	width: 100%;
+	transform: scale(550%, 1);
+}
+
+
+/****************/
+/* column */
+/****************/
+section:nth-child(4) div{
+	padding: 1em;
+	/* margin-top: 4em; */
+}
+
+section:nth-child(4) p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
 
 
 /****************/
@@ -299,9 +359,36 @@ section:nth-child(5){
 	padding-right: 1em;
 }
 
+section:nth-child(5) p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+
 iframe{
 	width: 90vw;
 	padding: 0;
 	/* height: fit-content; */
 	/* height: 4em; */
 }
+
+
+/****************/
+/* beurzen en evenementen */
+/****************/
+
+section:nth-child(6){
+	padding: 1em;
+	margin-top: 4em;
+}
+
+section:nth-child(6) p{
+	padding-top: 1em;
+}
+
+section:nth-child(6) h2{
+	padding-bottom: .5em;
+}
+
+/* bron icons header, moet nog op goede plek */
+/* <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> */

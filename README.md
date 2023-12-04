@@ -128,6 +128,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  rare bug dat het naar rechts kan scrollen
+  hulp mainpagina
+  is mijn oplossing voor artikelen ook oke?
+  
 
 
   ### Agenda voor meeting
@@ -146,7 +150,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - responsiveness article images gefict
   - bug links rechts scrollen pagina
   - hulp main page pic
-  - 
+  - met me eens dat een achtergrond met halve kleuren ook goed is ipv transform
 
 </details>
 

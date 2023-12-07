@@ -277,6 +277,29 @@ article div {
 }
 
 
+/****************/
+/* over ons artikelsn */
+/****************/
+.otherarticle{
+	/* background-color: blue; */
+	/* background-image: none; */
+	background-image: linear-gradient(to right, var(--color-niet) 10%, var(--color-secundair-background) 10%, var(--color-secundair-background) 90%, var(--color-niet) 90%);
+	/* margin-top: 2em; */
+}
+
+.otherarticle div{
+	margin-left: 2em;
+	margin-right: 2em;
+}
+.otherarticle div p{
+	margin-bottom: 2em;
+}
+.otherarticle img{
+	margin: 0em;
+}
+
+
+
 
 
 /****************/
@@ -400,6 +423,32 @@ section:nth-child(8) {
 	background-color: var(--brand-color);
 }
 
+/****************/
+/* collapsible */
+/****************/
+
+#collapsible{
+	background-color: aqua;
+	border: none;
+	width: 100%;
+	padding: 1em;
+}
+
+.contentCollapsible{
+	background-color: blueviolet;
+	display: none;
+}
+.contentCollapsible img{
+	max-width: 100%;
+}
+
+.visable{
+	display: block;
+}
+
+.hide{
+	display: none;
+}
 
 /****************/
 /* footer */

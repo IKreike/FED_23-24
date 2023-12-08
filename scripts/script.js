@@ -25,8 +25,8 @@ console.log("hi");
 // }
 
 // end copyright
-var fold = document.getElementById("collapsible");
-var inhoud = document.getElementById("contentCollapsible");
+var fold = document.querySelector(".collapsible");
+var inhoud = document.querySelector(".contentCollapsible");
 
 fold.addEventListener("click", displaycontent);
 

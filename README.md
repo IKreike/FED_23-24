@@ -182,22 +182,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Niet zo veel vragen uit mezelf, heb meer aandacht besteed aan andere opdracht
+  plan is om in de les te werken en te zien welke vragen er opkomen.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - code ziet er goed uit er missen alleen nog dingen
+  - stel op welke punten van de surface plane je wilt maken
+  - maak microinteractie af, voeg animatie toe
+  - footer afmaken in opmaak
+  - verslag maken
+  - accisibility
+  - hulp fotos en boogje boven sommige artikelen
 
 </details>
 

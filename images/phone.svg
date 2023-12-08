@@ -1,0 +1,21 @@
+<svg style="fill: currentColor" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>C50090E9-98D0-4FC1-8DF5-1C0103471320</title>
+    <defs>
+        <polygon id="path-1" points="0.0005 0 16 0 16 15.9998 0.0005 15.9998"></polygon>
+    </defs>
+    <g id="h-styles">
+        <g id="Vormtaal-headers-en-footer-styles-Desktop-" transform="translate(-732.000000, -516.000000)">
+            <g id="navigation/desktop1440/footer" transform="translate(0.000000, 412.000000)">
+                <g id="02_menu" transform="translate(396.000000, 66.000000)">
+                    <g id="Group-3" transform="translate(336.000000, 38.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M2.0005,5.9998 L2.0005,1.9998 L6.9995,1.9998 L7.0005,3.9938 L6.0115,3.9948 L4.0135,3.9968 L4.0135,5.9948 C4.0135,9.0768 6.9165,11.9898 9.9885,11.9898 L11.9775,11.9898 L11.9885,10.0018 L11.9885,9.9998 L14.0005,9.9998 L14.0005,13.9998 L10.0005,13.9998 C5.1405,13.9998 2.0005,10.8598 2.0005,5.9998 L2.0005,5.9998 Z M16.0005,13.9998 L16.0005,7.9998 L10.0005,7.9998 L9.9885,9.9898 C7.9995,9.9898 6.0135,7.9998 6.0135,5.9948 L9.0005,5.9918 L8.9995,-0.0002 L2.0155,-0.0002 L1.9695,0.0488 L0.0005,1.9998 L0.0005,5.9998 C0.0005,11.9998 4.0005,15.9998 10.0005,15.9998 L14.0005,15.9998 L16.0005,13.9998 Z" id="Fill-1" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

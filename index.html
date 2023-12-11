@@ -6,16 +6,16 @@
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Howdy FED2324</title>
+	<title>Royal FloraHolland | Home Royal FloraHolland</title>
 
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/TabImage.jpg">
 </head>
 
 <body>
 
 	<nav>
-		<img src="./images/logo.png" alt="logo of site">
+		<a href="./index.html"><img src="./images/logo.svg" alt="logo of site"></a>
 		<div>
 			<button>
 				<img src="./images/search.svg" alt="user icon">
@@ -28,9 +28,25 @@
 			<button>
 				<img src="./images/zoekglas.svg" alt="search">
 			</button>
-			<button>
-				<img src="./images/menu.png" alt="user">
+			<button class="burger">
+				<img src="./images/menu.png" alt="menu">
 			</button>
+
+			<div class="contentCollapsible" class="hide">
+				<p>hallo tekst hier ja</p>
+				<button>aanvoeren</button>
+				<button>aanvoeren</button>
+				<button>aanvoeren</button>
+				<button>aanvoeren</button>
+				<button>aanvoeren</button>
+
+				<div>
+					<p> Nieuw bij royal floraholland</p>
+					<a href="#"> word aanvoerder</a>
+					<a href="#"> word aanvoerder</a>
+					<a href="#"> word aanvoerder</a>
+				</div>
+			</div>
 		</div>
 	</nav>
 
@@ -43,11 +59,12 @@
 			januari 2024 vier ledenpakketten.
 		</p>
 		<a href="#" class="button">lees meer</a>
+
 	</header>
 
 
 	<main>
-		<section>
+		<section class="FAL">
 			<h3>Meest bezochte pagina's</h3>
 			<ul>
 				<li><a href="./overOns.html" class="groen">Prognose eindtijden</a></li>
@@ -77,7 +94,7 @@
 			<article>
 				<img src="./images/Tweedaagse-Ledenraad.jpg" alt="foto lol">
 				<div>
-					<time datetime="21/11/2023">21 november 2023</time>
+					<time datetime="2023-11-21">21 november 2023</time>
 					<h3 class="title">Nieuwe kandidaten Ledenraad</h3>
 					<a href="#">lees meer</a>
 				</div>
@@ -142,20 +159,22 @@
 		</section>
 
 
-		<section>
+		<section class="potweb">
 			<!-- weer de svg invoegen -->
 			<img src="./images/featuredItemBlockBg-mobile.png" alt="ronding">
 			<article>
-			<h2>potweb wint Greenovation award 2023</h2>
-			<p>
-				Op een milieuvriendelijke manier potworm bestrijden bij de teelt van Phalaenopsis-orchideeën: met Potweb
-				kan het. Een consortium van vier bedrijven - Levoplant, Ter Laak, Opti-flor en Solvent Engineering –
-				sleept met deze unieke vinding de Greenovation Award 2023 in de wacht.
-			</p>
-			<a href="#" class="button">verder lezen</a>
-			<iframe src="https://www.youtube.com/embed/aBKDuM3ygY0?feature=oembed&enablejsapi=1&origin=https%3A%2F%2F">
-			</iframe>
-		</article>
+				<h2>potweb wint Greenovation award 2023</h2>
+				<p>
+					Op een milieuvriendelijke manier potworm bestrijden bij de teelt van Phalaenopsis-orchideeën: met
+					Potweb
+					kan het. Een consortium van vier bedrijven - Levoplant, Ter Laak, Opti-flor en Solvent Engineering –
+					sleept met deze unieke vinding de Greenovation Award 2023 in de wacht.
+				</p>
+				<a href="#" class="button">verder lezen</a>
+				<iframe
+					src="https://www.youtube.com/embed/aBKDuM3ygY0?feature=oembed&enablejsapi=1&origin=https%3A%2F%2F">
+				</iframe>
+			</article>
 		</section>
 
 		<section>
@@ -231,11 +250,8 @@
 			<li><a href="#">Facebook Messenger</a></li>
 			<li><a href="#">Contactformulier</a></li>
 		</ul>
-
+		<p>Follow us</p>
 		<ul>
-			<li>
-				<p>Follow us</p>
-			</li>
 			<li><a href="#"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
 			<li><a href="#"><img src="./images/youtube.svg" alt="youtube"></a></li>
 		</ul>
@@ -249,8 +265,8 @@
 			<h6>c2023</h6>
 			<h6>royal floraholland</h6>
 			<ul>
-				<li>privacyverklaring</li>
-				<li>cookieverklaring</li>
+				<li>privacy- verklaring</li>
+				<li>cookie- verklaring</li>
 				<li>disclaimer</li>
 				<li>cvd</li>
 				<li>algemene voorwaarden</li>
@@ -259,4 +275,5 @@
 	</footer>
 	<script defer src="scripts/script.js"></script>
 </body>
+
 </html>

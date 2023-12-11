@@ -236,8 +236,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://css-tricks.com/almanac/properties/m/mask-image/
+  2. https://stackoverflow.com/questions/1909648/stacking-divs-on-top-of-each-other
+  2. https://cssgridgarden.com/#nl 
+  3. https://www.w3schools.com/css/css3_masking.asp
+  5. https://www.w3schools.com/howto/howto_js_collapsible.asp
 
 </details>

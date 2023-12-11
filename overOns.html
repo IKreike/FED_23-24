@@ -14,24 +14,72 @@
 
 <body>
     <nav>
-        <a href="./index.html"><img src="./images/logo.svg" alt="logo of site"></a>
-        <div>
-            <button>
-                <img src="./images/search.svg" alt="user icon">
-                <!-- <svg>
+		<a href="./index.html"><img src="./images/logo.svg" alt="logo of site"></a>
+		<div class="bar">
+			<button>
+				<img src="./images/search.svg" alt="user icon">
+				<!-- <svg>
 					<path
 						d="M3.1236,9.9998 C4.3846,11.2308 6.0986,11.9998 7.9996,11.9998 C9.9016,11.9998 11.6156,11.2308 12.8766,9.9998 L12.8766,9.9998 L13.6206,9.9998 C14.6046,10.7908 15.4156,11.7838 15.9996,12.9128 L15.9996,12.9128 L15.9996,15.9998 L14.9196,15.9998 C14.7206,14.6368 14.1256,13.3568 13.2066,12.3328 C11.6946,13.4068 9.8766,13.9998 7.9996,13.9998 C6.1236,13.9998 4.3056,13.4068 2.7936,12.3328 C1.8746,13.3568 1.2796,14.6368 1.0796,15.9998 L1.0796,15.9998 L-0.000400000001,15.9998 L-0.000400000001,12.9128 C0.5846,11.7838 1.3956,10.7908 2.3796,9.9998 L2.3796,9.9998 Z M7.9996,-0.0002 C10.7616,-0.0002 12.9996,2.2388 12.9996,4.9998 C12.9996,7.7618 10.7616,9.9998 7.9996,9.9998 C5.2386,9.9998 2.9996,7.7618 2.9996,4.9998 C2.9996,2.2388 5.2386,-0.0002 7.9996,-0.0002 Z M7.9996,1.9998 C6.3466,1.9998 4.9996,3.3458 4.9996,4.9998 C4.9996,6.6538 6.3466,7.9998 7.9996,7.9998 C9.6536,7.9998 10.9996,6.6538 10.9996,4.9998 C10.9996,3.3458 9.6536,1.9998 7.9996,1.9998 Z"
 						id="Combined-Shape"></path>
 				</svg> -->
-            </button>
-            <button>
-                <img src="./images/zoekglas.svg" alt="search">
-            </button>
-            <button>
-                <img src="./images/menu.png" alt="user">
-            </button>
-        </div>
-    </nav>
+			</button>
+			<button>
+				<img src="./images/zoekglas.svg" alt="search">
+			</button>
+			<button class="burger">
+				<img src="./images/menu.png" alt="menu">
+			</button>
+		</div>
+		<div class="contentCollapsible visable">
+			<button class="menubutton collapsible">Aanvoeren</button>
+			<div class="visable">
+				<ul>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+				</ul>
+			</div>
+			<button class="menubutton collapsible">Inkopen</button>
+			<div class="visable">
+				<ul>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+				</ul>
+			</div>
+			<button class="menubutton collapsible">Over Ons</button>
+			<div class="visable">
+				<ul>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+					<li><a href="#">marktplaats</a></li>
+				</ul>
+			</div>
+			<button class="menubutton">Service & contact</button>
+			<button class="menubutton">Werken bij</button>
+
+
+			<div class="navFooter">
+				<p> Nieuw bij royal floraholland</p>
+				<ul>
+					<li><a href="#">Word aanvoerder</a></li>
+					<li><a href="#">Word aanvoerder</a></li>
+					<li><a href="#">Word aanvoerder</a></li>
+				</ul>
+			</div>
+			<button class="menubutton">taalinstellingen</button>
+		</div>
+	</nav>
 
     <header class="page2">
         <div class="mainImg2">
@@ -81,11 +129,13 @@
 
         <section class="harmonica">
             <h2>Over ons</h2>
-            <button class="collapsible">
+
+
+            <button class="collapsible overOnsButton">
                 <h4>Ons verhaal in 1 minuut</h4>
-                <img src="./images/dropdownPijl.svg" alt="pijltje">
+                <img src="./images/dropdownPijl.svg" alt="pijltje" class="OverOnsPijltje draai">
             </button>
-            <div class="contentCollapsible">
+            <div class="OverOnsCollapsable">
                 <h3>ons verhaal in 1 minuut</h3>
                 <p>
                     Bekijk hier de Royal FloraHolland video met ons verhaal in 1 minuut: wie we zijn, wat we doen en wat
@@ -95,11 +145,11 @@
                 <img src="./images/internationalMarketplace.png" alt="thumnail">
             </div>
 
-            <button class="collapsible">
+            <button class="collapsible overOnsButton">
                 <h4>Directie en management</h4>
-                <img src="./images/dropdownPijl.svg" alt="pijltje">
+                <img src="./images/dropdownPijl.svg" alt="pijltje" class="OverOnsPijltje draai">
             </button>
-            <div class="contentCollapsible">
+            <div class="OverOnsCollapsable">
                 <h3>Directie en management</h3>
                 <p>
                     Bekijk hier de Royal FloraHolland video met ons verhaal in 1 minuut: wie we zijn, wat we doen en wat
@@ -109,11 +159,11 @@
                 <img src="./images/internationalMarketplace.png" alt="thumnail">
             </div>
 
-            <button class="collapsible">
+            <button class="collapsible overOnsButton">
                 <h4>Ledenraad</h4>
                 <img src="./images/dropdownPijl.svg" alt="pijltje">
             </button>
-            <div class="contentCollapsible">
+            <div class="OverOnsCollapsable ">
                 <h3>Ledenraad</h3>
                 <p>
                     Bekijk hier de Royal FloraHolland video met ons verhaal in 1 minuut: wie we zijn, wat we doen en wat
@@ -123,11 +173,11 @@
                 <img src="./images/internationalMarketplace.png" alt="thumnail">
             </div>
 
-            <button class="collapsible">
+            <button class="collapsible overOnsButton">
                 <h4>Onze geschiedenis</h4>
                 <img src="./images/dropdownPijl.svg" alt="pijltje">
             </button>
-            <div class="contentCollapsible">
+            <div class="OverOnsCollapsable">
                 <h3>Onze geschiedenis</h3>
                 <p>
                     Bekijk hier de Royal FloraHolland video met ons verhaal in 1 minuut: wie we zijn, wat we doen en wat
@@ -137,11 +187,11 @@
                 <img src="./images/internationalMarketplace.png" alt="thumnail">
             </div>
 
-            <button class="collapsible">
+            <button class="collapsible overOnsButton">
                 <h4>Duurzaamheid</h4>
                 <img src="./images/dropdownPijl.svg" alt="pijltje">
             </button>
-            <div class="contentCollapsible">
+            <div class="OverOnsCollapsable">
                 <h3>Directie en management</h3>
                 <p>
                     Bekijk hier de Royal FloraHolland video met ons verhaal in 1 minuut: wie we zijn, wat we doen en wat
@@ -151,11 +201,11 @@
                 <img src="./images/internationalMarketplace.png" alt="thumnail">
             </div>
 
-            <button class="collapsible">
+            <button class="collapsible overOnsButton">
                 <h4>Sponsoring</h4>
                 <img src="./images/dropdownPijl.svg" alt="pijltje">
             </button>
-            <div class="contentCollapsible">
+            <div class="OverOnsCollapsable">
                 <h3>Directie en management</h3>
                 <p>
                     Bekijk hier de Royal FloraHolland video met ons verhaal in 1 minuut: wie we zijn, wat we doen en wat
@@ -165,11 +215,11 @@
                 <img src="./images/internationalMarketplace.png" alt="thumnail">
             </div>
 
-            <button class="collapsible">
+            <button class="collapsible overOnsButton">
                 <h4>Veiligheid</h4>
                 <img src="./images/dropdownPijl.svg" alt="pijltje">
             </button>
-            <div class="contentCollapsible">
+            <div class="OverOnsCollapsable">
                 <h3>Directie en management</h3>
                 <p>
                     Bekijk hier de Royal FloraHolland video met ons verhaal in 1 minuut: wie we zijn, wat we doen en wat
@@ -179,11 +229,11 @@
                 <img src="./images/internationalMarketplace.png" alt="thumnail">
             </div>
 
-            <button class="collapsible">
+            <button class="collapsible overOnsButton">
                 <h4>Gedragscode</h4>
                 <img src="./images/dropdownPijl.svg" alt="pijltje">
             </button>
-            <div class="contentCollapsible">
+            <div class="OverOnsCollapsable">
                 <h3>Directie en management</h3>
                 <p>
                     Bekijk hier de Royal FloraHolland video met ons verhaal in 1 minuut: wie we zijn, wat we doen en wat
@@ -193,11 +243,11 @@
                 <img src="./images/internationalMarketplace.png" alt="thumnail">
             </div>
 
-            <button class="collapsible">
+            <button class="collapsible overOnsButton">
                 <h4>Pers</h4>
                 <img src="./images/dropdownPijl.svg" alt="pijltje">
             </button>
-            <div class="contentCollapsible">
+            <div class="OverOnsCollapsable">
                 <h3>Directie en management</h3>
                 <p>
                     Bekijk hier de Royal FloraHolland video met ons verhaal in 1 minuut: wie we zijn, wat we doen en wat
@@ -207,11 +257,11 @@
                 <img src="./images/internationalMarketplace.png" alt="thumnail">
             </div>
 
-            <button class="collapsible">
+            <button class="collapsible overOnsButton">
                 <h4>Cijfers en feiten</h4>
                 <img src="./images/dropdownPijl.svg" alt="pijltje">
             </button>
-            <div class="contentCollapsible">
+            <div class="OverOnsCollapsable">
                 <h3>Directie en management</h3>
                 <p>
                     Bekijk hier de Royal FloraHolland video met ons verhaal in 1 minuut: wie we zijn, wat we doen en wat

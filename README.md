@@ -24,9 +24,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Je focus:
   hier je focus (kies uit responsive óf surface plane)
-  ik heb nog steeds werkelijk geen idee wat deze dingen betekenen
- 
-  doe maar surface plane, klinkt leuker met animaties en darkmode enzo
+  
+  surface plane, klinkt leuker met animaties en darkmode enzo
 </details>
 
 
@@ -43,12 +42,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.royalfloraholland.com/ 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Floraholland-Homepage 
+  <img src="./readme-images/Origineel1.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Floraholland- Over ons
+  <img src="./readme-images/Origineel2.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -93,16 +92,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  <img src="./readme-images/base.png" width="375px" alt="opbouw pagina en artikelen">
 
 
   ### Verslag van meeting
@@ -128,20 +118,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  <img src="./readme-images/orgineel-artikel.png" width="375px" alt="orginele artikel">
+  <img src="./readme-images/eigen-artikel.png" width="375px" alt="eigen artikel">
+
+
+  ### Agenda voor meeting
+
   rare bug dat het naar rechts kan scrollen
   hulp mainpagina
   is mijn oplossing voor artikelen ook oke?
   
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting

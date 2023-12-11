@@ -133,7 +133,7 @@ p {
 
 
 /****************/
-/* header styling */
+/* header(navbar) styling */
 /****************/
 
 nav {
@@ -148,22 +148,24 @@ nav {
 	/* padding-top: 0; */
 	top: 0;
 	padding: .5em 1em;
+	z-index: 3;
 }
 
-nav div {
+.bar {
 	display: flex;
 }
 
 nav a img {
 	/* max-width: fit-content; */
 	/* width: 100%; */
-	background-color: hotpink;
-	/* height: 4em; */
+	/* background-color: hotpink; */
+	height: 3em;
 	/* margin-right: auto; */
 	/* margin-top: 0; */
+	/* padding: 2em; */
 }
 
-nav div button {
+.bar button {
 	background-color: var(--color-secundair-background);
 	width: 3.5em;
 	height: 3.5em;
@@ -173,7 +175,7 @@ nav div button {
 	border: none;
 }
 
-nav div button img {
+.bar button img {
 	width: 60%;
 	height: 60%;
 	display: flex;
@@ -181,6 +183,10 @@ nav div button img {
 	align-items: center;
 }
 
+
+/****************/
+/* header styling */
+/****************/
 header {
 	margin-top: 4em;
 	width: 100vw;
@@ -216,18 +222,46 @@ li {
 /* menuscherm  */
 /****************/
 
-.hide {
-	display: block;
-}
-
 .contentCollapsible {
-	height: 50em;
-	background-color: hotpink;
+	height: fit-content;
+	background-color: var(--color-secundair-background);
+	position: absolute;
+	left: 0;
+	top: 4em;
+	height: 100vh;
+	overflow-y: scroll;
+}
+
+.navFooter {
+	padding: 2em;
+}
+
+.navFooter a {
+	color: var(--color-links);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.visable {
+	display: none;
 }
 
 
-
-
+.menubutton {
+	background-color: var(--color-secundair-background);
+	width: 100vw;
+	border-style: solid;
+	border-color: var(--color-greyedOut);
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	padding: 1em;
+	font-family: "halyard-display", sans-serif;
+	font-size: 1.2em;
+	font-weight: 700;
+	display: flex;
+	justify-content: space-between;
+}
 
 
 
@@ -254,20 +288,20 @@ li {
 
 .mainImg2 {
 	display: grid;
-	/* grid-template-columns: repeat(4, 1fr); */
-	/* grid-template-rows: repeat(4, auto); */
 	grid-template: 1fr / 1fr;
 	/* place-items: center; */
+	/* place-items: center start; */
+	/* width: 10em; */
 }
 
 .blaadje1 {
 	background-image: url(/images/leaf-left.svg);
-	width: 100%;
+	width: 70%;
 	/* height: 15em; */
 	/* background-color: blue; */
 
 	background-repeat: no-repeat;
-	background-size: 15em;
+	background-size: contain;
 	background-position: center;
 	/* padding: 2em; */
 	/* margin: 2em; */
@@ -275,13 +309,34 @@ li {
 	z-index: 1;
 	grid-column: 1 / 1;
 	grid-row: 1 /1;
-	justify-self: start;
+	/* justify-self: start; */
+	/* left: 0; */
+
+	animation-name: blaadjelinks;
 }
+
+/* @keyframes blaadjelinks {
+	0% {rotate: 0deg;}
+	100% {rotate: 10deg;}
+} */
+/* .blaadje1:active{
+	rotate: -10deg;
+	transition: 2s;
+	transition-timing-function: linear;
+} */
+
+.blaadjeFoto:active{
+	rotate: -10deg;
+	transition: 2s;
+	transition-timing-function: linear;
+}
+
+
 
 .blaadjeFoto {
 	background-image: url(/images/kwekers.jpeg);
 	mask-image: url(/images/leaf-right.svg);
-	/* width: 100%; */
+	width: 70%;
 	height: 50vh;
 	/* height: 4em; */
 
@@ -291,12 +346,12 @@ li {
 
 	mask-repeat: no-repeat;
 	mask-position: center;
-	mask-size: 15em;
+	mask-size: contain;
 
 	z-index: 2;
 	grid-column: 1 / 1;
 	grid-row: 1 /1;
-	/* justify-self: end; */
+	justify-self: end;
 }
 
 
@@ -517,7 +572,7 @@ iframe {
 /****************/
 
 section:nth-child(6) {
-	padding: 1em;
+	/* padding: 1em; */
 	margin-top: 4em;
 }
 
@@ -539,6 +594,13 @@ section:nth-child(8) {
 	background-color: var(--brand-color);
 }
 
+section:nth-child(8) a {
+	background-color: var(--color-accent);
+}
+
+section:nth-child(8) a {
+	background-color: var(--color-accent);
+}
 
 
 
@@ -726,8 +788,19 @@ footer section ul:nth-of-type(1) li a {
 /* collapsible */
 /****************/
 
-.collapsible {
-	background-color: var(--color-background);
+/* .collapsible {
+
+} */
+
+.collapsible h4 {
+	font-size: 1.8em;
+	padding: .5em;
+}
+
+.overOnsButton {
+	/* background-color: var(--color-background); */
+	background-color: brown;
+
 	/* border-bottom: black;
 	border-top: black; */
 	border-style: solid;
@@ -744,18 +817,25 @@ footer section ul:nth-of-type(1) li a {
 	justify-content: space-between;
 }
 
-.collapsible h4 {
-	font-size: 1.8em;
-	padding: .5em;
-}
-
-.contentCollapsible {
-	/* background-color: blueviolet; */
-	display: none;
-}
-
-.contentCollapsible img {
+.OverOnsCollapsable img {
 	max-width: 100%;
+}
+
+.OverOnsCollapsable {
+	/* margin-top: 20em; */
+	height: fit-content;
+	background-color: rgb(50, 55, 205);
+	/* margin-left: 0;
+		padding-left: 0; */
+	/* position: absolute; */
+	/* justify-content: start; */
+	width: 100vw;
+	left: 0;
+	top: 4em;
+	display: none;
+	/* transition: 4s; */
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 }
 
 
@@ -765,7 +845,35 @@ footer section ul:nth-of-type(1) li a {
 	margin-bottom: 1em;
 }
 
-/* dingen toe te voegen, surface plane */
+
+/* .harmonica::after{
+	content: '\02795';
+} */
+
+/* .draai{
+	transform:rotate(90deg);
+} */
+
+/* surface plane */
+/* done */
+/* advanced positioning, te zien in main page page 2 */
+
+
+/* possible */
 /* light/dark */
 /* animatie bij menus/collapsable */
 /* svg animeren? */
+/* states van website als geheel(UI-stack van Hurff)????? als ik weet wat het is */
+/* States van controls?? */
+
+
+/* zeggen als ik echt niks heb */
+/* video (potweb) */
+
+
+/* 
+bron sun
+<a href="https://www.flaticon.com/free-icons/sun" title="sun icons">Sun icons created by Good Ware - Flaticon</a> */
+
+/* bron moon
+<a href="https://www.flaticon.com/free-icons/moon" title="moon icons">Moon icons created by Good Ware - Flaticon</a> */

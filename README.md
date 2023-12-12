@@ -211,7 +211,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je uitkomst - karakteristiek screenshots:
   https://ikreike.github.io/FED_23-24/ 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  Ik heb de screenschots op mijn mobiel gemaakt en het blijkt dat de de svg voor de pijltjes en de hoofdafbeelding op de over ons pagina het niet doet. 
+  <img src="/readme-images/uitwerking-home.jpg" width="375px" alt="uitwerking home">
+  <img src="/readme-images/uitwerking-overons.jpg" width="375px" alt="uitwerking over ons">
+  <img src="/readme-images/uitwerking-menu.jpg" width="375px" alt="uitwerking menu">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -227,6 +230,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   animatie bij het uitschuiven van de collapsibles. De site waar ik de code voor het uitklappen heb (https://www.w3schools.com/howto/howto_js_accordion.asp) gehaald heeft ook een deel over het animatiedeel, maar na het bekeken en geprobeerd te hebben en het niet te kunnen begrijpen heb ik besloten om het uiteindelijk niet toe te voegen.
 
   De code die ik nu heb voor de collapsibles heb ik op in het menu en in het over ons deel gebruikt. Dit bleek later onhandig te zijn, want ik kon niet verschillende animaties instellen voor de twee blokken. Dit kon niet op een snelle manier opgelost worden, dus ik heb het moeten laten staan.
+
+  Ik heb helaas ook veel van de eisen van de surface plane niet gedaan, waaronder de rest van de uitwerking van de dark/light mode. Ik heb hiervoor wel een knop gemaakt en werkend gemaakt, maar door tijdsnood was het lastig.
 
 
 

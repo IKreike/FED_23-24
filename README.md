@@ -60,6 +60,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  alleen de links werden opgelezen, niet de tekst of de titels bij de links (ligt dit aan mijn instellingen?)
+  focus is duidelijk aangegeven met de secondaire accentkleur
+  kan niet de over ons collapsibles aanklikken, wil direct door naar de meer lezen van de eerste link
+  heel veel nummers bij elke knop of link en plaatje die niet logish zijn
+
+  mobile mode:
+  lees munu knop die niet zichtbaar zijn, sommige hebben alleen een nummer en zijn niet goed herkenbaar (het zoekveld bv wel)
+  leest wel de titel en de informatie (for some reason gaat hij er nu atomatish doorheen ipv dat ik aan het klikken ben)
+  de geselecteerde ding linkt niet op met het vakje wat geselecteerd is (ligt wss ook aan instellingen)
+  de date is een h6
+
 
 </details>
 
@@ -71,13 +82,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="/readme-images/breakdown1.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="/readme-images/breakdown2.jpg" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
@@ -151,7 +157,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  nav: het zijn geen random nummer meer maar woorden, hij herhaalt het wel 2x doordat het in een groep zit
+  Als je de burger openmaakt gaat hij niet automatish door en hij geeft niet aan dat er iets is gebeurd
+  als je uit het menu doorklikt gaat hij naar de links van de paginas
 
+  Je kan wel alle items van de over ons collapsible afzonderlijk openen
 </details>
 
 
@@ -194,17 +204,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
+  https://ikreike.github.io/FED_23-24/ 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik ben uiteindelijk heel erg blij met de landingspagina van de over ons pagina. Niet alleen heb ik hier grid, z-axis en positionering gebruikt, het is me ook gelukt om het plaatje subtiel te animeren.
+  <img src="/readme-images/geleerd-positionering.png" width="375px" alt="advanced positioning en animatie">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik ben ook erg blij met de collapsibles. Ik heb een groot deel van deze code van het internet, maar ik heb het wel op zo'n manier onderzocht dat ik het begrijp en zelf toevoegingen heb kunnen maken voor het pijltje aan de rechterkant en deze in een transitie te zietten
+  <img src="/readme-images/geleerd-js-transform.png" width="375px" alt="js, transform">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  animatie bij het uitschuiven van de collapsibles. De site waar ik de code voor het uitklappen heb (https://www.w3schools.com/howto/howto_js_accordion.asp) gehaald heeft ook een deel over het animatiedeel, maar na het bekeken en geprobeerd te hebben en het niet te kunnen begrijpen heb ik besloten om het uiteindelijk niet toe te voegen.
+
+  De code die ik nu heb voor de collapsibles heb ik op in het menu en in het over ons deel gebruikt. Dit bleek later onhandig te zijn, want ik kon niet verschillende animaties instellen voor de twee blokken. Dit kon niet op een snelle manier opgelost worden, dus ik heb het moeten laten staan.
+
+
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -227,5 +245,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. https://cssgridgarden.com/#nl 
   3. https://www.w3schools.com/css/css3_masking.asp
   5. https://www.w3schools.com/howto/howto_js_collapsible.asp
+
+  https://stackoverflow.com/questions/16302045/finding-child-element-of-parent-with-javascript
 
 </details>

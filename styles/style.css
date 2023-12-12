@@ -38,6 +38,12 @@ body {
 	--color-greyedOut: #606060;
 }
 
+/****************/
+/* dark mode */
+/****************/
+@media (prefers-color-scheme: dark){
+
+}
 
 
 /****************/
@@ -183,6 +189,10 @@ nav a img {
 	align-items: center;
 }
 
+.kruisje img{
+	content: url(/images/close.png);
+}
+
 
 /****************/
 /* header styling */
@@ -263,6 +273,23 @@ li {
 	justify-content: space-between;
 }
 
+.menubutton p{
+	font-family: "halyard-display", sans-serif;
+	/* font-size: 1.2em; */
+	font-weight: 700;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menubutton div{
+	background-color: var(--color-background);
+	width: 2em;
+	height: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
 
 /****************/
@@ -313,24 +340,16 @@ li {
 	/* left: 0; */
 
 	animation-name: blaadjelinks;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-duration: 4s;
+	animation-timing-function: linear;
 }
 
-/* @keyframes blaadjelinks {
-	0% {rotate: 0deg;}
-	100% {rotate: 10deg;}
-} */
-/* .blaadje1:active{
-	rotate: -10deg;
-	transition: 2s;
-	transition-timing-function: linear;
-} */
-
-.blaadjeFoto:active{
-	rotate: -10deg;
-	transition: 2s;
-	transition-timing-function: linear;
+@keyframes blaadjelinks {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-10deg);}
 }
-
 
 
 .blaadjeFoto {
@@ -352,8 +371,18 @@ li {
 	grid-column: 1 / 1;
 	grid-row: 1 /1;
 	justify-self: end;
+
+	animation-name: blaadjeRechts;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-duration: 4s;
+	animation-timing-function: linear;
 }
 
+@keyframes blaadjeRechts {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(10deg);}
+}
 
 
 
@@ -799,7 +828,7 @@ footer section ul:nth-of-type(1) li a {
 
 .overOnsButton {
 	/* background-color: var(--color-background); */
-	background-color: brown;
+	/* background-color: brown; */
 
 	/* border-bottom: black;
 	border-top: black; */
@@ -822,22 +851,19 @@ footer section ul:nth-of-type(1) li a {
 }
 
 .OverOnsCollapsable {
-	/* margin-top: 20em; */
 	height: fit-content;
-	background-color: rgb(50, 55, 205);
-	/* margin-left: 0;
-		padding-left: 0; */
-	/* position: absolute; */
-	/* justify-content: start; */
 	width: 100vw;
 	left: 0;
 	top: 4em;
 	display: none;
 	/* transition: 4s; */
-	overflow: hidden;
-	transition: max-height 0.2s ease-out;
+	/* overflow: hidden; */
+	/* transition: max-height 0.2s ease-out; */
 }
 
+.OverOnsCollapsable img{
+	padding-top: 2em;
+}
 
 .harmonica h2 {
 	margin-left: .5em;
@@ -845,14 +871,25 @@ footer section ul:nth-of-type(1) li a {
 	margin-bottom: 1em;
 }
 
+.OverOnsPijltje{
+	align-self: center;
+}
 
-/* .harmonica::after{
-	content: '\02795';
-} */
-
-/* .draai{
+.draai {
+	/* background-color: green; */
 	transform:rotate(90deg);
-} */
+	transition: .2s;
+}
+
+.min {
+	background-color: var(--color-links);
+	content: "-";
+}
+
+
+
+
+
 
 /* surface plane */
 /* done */

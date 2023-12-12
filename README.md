@@ -162,6 +162,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   als je uit het menu doorklikt gaat hij naar de links van de paginas
 
   Je kan wel alle items van de over ons collapsible afzonderlijk openen
+
+  <img src="/readme-images/wcag1.jpg" width="375px" alt="wcag cheklist">
+  <img src="/readme-images/wcag2.jpg" width="375px" alt="wcag cheklist">
+  <img src="/readme-images/wcag3.jpg" width="375px" alt="wcag cheklist">
+  <img src="/readme-images/wcag4.jpg" width="375px" alt="wcag cheklist">
+  <img src="/readme-images/wcag5.jpg" width="375px" alt="wcag cheklist">
 </details>
 
 

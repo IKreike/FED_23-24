@@ -13,6 +13,7 @@
 /* html { line-sizing: normal; }; */
 body {
 	overflow-x: hidden;
+	background-color: var(--color-background);
 }
 
 
@@ -36,14 +37,9 @@ body {
 	--large-margin: 4em;
 	--small-margin: 2em;
 	--color-greyedOut: #606060;
+	/* --font-size:; */
 }
 
-/****************/
-/* dark mode */
-/****************/
-@media (prefers-color-scheme: dark){
-
-}
 
 
 /****************/
@@ -62,6 +58,7 @@ a {
 	font-family: var(--display-text);
 	font-weight: 400;
 	font-style: normal;
+	color: var(--color-text);
 	/* blijkbaar ging hij met deze alles overscrijven */
 	/* color: var(--color-text); */
 }
@@ -96,6 +93,15 @@ h2 {
 a {
 	color: var(--color-text);
 	padding: 1em;
+}
+
+button:focus{
+	background-color: var(--brand-color);
+}
+
+a:focus{
+	color: var(--color-accent);
+	background-color: var(--brand-color);
 }
 
 
@@ -173,6 +179,10 @@ nav a img {
 	justify-content: center;
 	align-items: center;
 	border: none;
+	/* fill: var(--color-text); */
+	/* fill: blue; */
+	/* color: blueviolet; */
+	/* background-color: chartreuse; */
 }
 
 .bar button img {
@@ -181,6 +191,7 @@ nav a img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/* background-color: chartreuse; */
 }
 
 .kruisje img{
@@ -277,6 +288,17 @@ li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+
+
+/****************/
+/* subkopjes menu */
+/****************/
+
+.accesibility{
+	z-index: 2;
+	top: 0;
 }
 
 
@@ -429,6 +451,13 @@ article div {
 	margin: 1em;
 }
 
+.filled p{
+	padding: 1em;
+}
+
+.filled h3 {
+	padding-left: .5em;
+}
 
 /****************/
 /* over ons artikelsn */
@@ -505,7 +534,7 @@ section:nth-child(2) h2 {
 section:nth-child(3) {
 	background-color: var(--color-secundair-background);
 	background-image: none;
-	margin-top: 1em;
+	margin-top: 6em;
 }
 
 section:nth-child(3) p {
@@ -544,6 +573,7 @@ section:nth-child(4) p {
 .potweb {
 	background-color: var(--color-secundair-background);
 	background-image: none;
+	margin-top: 6em;
 }
 
 .potweb p {
@@ -560,6 +590,7 @@ section:nth-child(4) p {
 iframe {
 	width: 90vw;
 	padding: 0;
+	margin-top: 1em;
 }
 
 
@@ -571,13 +602,32 @@ section:nth-child(6) {
 	margin-top: 4em;
 }
 
+section:nth-child(6) div:first-child{
+	/* background-color: hotpink; */
+	padding: 1em;
+
+}
+
 section:nth-child(6) p {
-	padding-top: 1em;
+	padding-top: 2em;
+	padding-bottom: 1em;
 }
 
 section:nth-child(6) h2 {
 	padding-bottom: .5em;
 }
+
+/****************/
+/* over royal floraholland */
+/****************/
+
+section:nth-child(7) {
+	padding-top: 6em;
+}
+section:nth-child(7) h2{
+	padding-left: .5em;
+}
+
 
 
 /****************/
@@ -587,6 +637,10 @@ section:nth-child(6) h2 {
 section:nth-child(8) {
 	padding: 1em;
 	background-color: var(--brand-color);
+}
+
+section:nth-child(8) p{
+	padding-bottom: 1em;
 }
 
 section:nth-child(8) a {
@@ -817,7 +871,79 @@ footer section ul:nth-of-type(1) li a {
 	content: "-";
 }
 
+.active{
+	background-color: var(--brand-color);
+	color: var(--color-accent);
+}
 
+/****************/
+/* dark mode */
+/****************/
+
+.darkMode{
+	/* background-color: blue; */
+	/* color: aqua; */
+	--color-text: rgb(236, 235, 235);
+	--color-background: #606060;
+	--brand-color: rgb(92, 198, 141);
+	--color-secundair-background: rgb(0, 0, 0);
+
+	--color-links: rgb(238, 122, 48);
+	--color-niet: rgba(0, 0, 0, 0);
+	--color-accent: rgb(51, 18, 140);
+	--color-greyedOut: rgb(255, 255, 255);
+}
+
+
+/* font grootte veranderen met knoppen*/
+.kleinFontAAN{
+	font-size: small;
+}
+
+.middelFontAAN{
+	font-size: medium;
+}
+
+.grootFontAAN{
+	font-size: large;
+}
+
+
+
+
+
+.cycleDay {
+	content: url(/images/cycle-night.png);
+	/* <a target="_blank" href="https://icons8.com/icon/648/sun">Sun</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
+}
+.userDay {
+	content: url(/images/user-night.svg);
+	width: 60%;
+	height: 60%;
+}
+.searchDay {
+	content: url(/images/zoekglasNacht.svg);
+	/* width: 3em;
+	height: 3em; */
+}
+.searchDay img {
+	width: 3em;
+	height: 3em;
+}
+
+
+.day {
+	content: url(/images/burger-night.svg);
+	/* <a target="_blank" href="https://icons8.com/icon/36389/menu">Hamburger Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
+}
+
+
+
+
+
+/* .navDark {
+
+} */
 
 
 

@@ -10,6 +10,7 @@ for (i = 0; i < acc.length; i++) {
         var panel = this.nextElementSibling; 
         var turning = this.querySelector(".OverOnsPijltje")
         console.log(turning);
+        this.classList.toggle("active");
         turning.classList.toggle("draai");
         if (panel.style.display === "block") {
             panel.style.display = "none";
@@ -40,12 +41,90 @@ function displaycontent() {
 }
 
 
+
+
 // code voor dark/lightmode
 var cycle = document.querySelector(".night");
+var alles = document.querySelector("body");
+
+var accButton = document.querySelector(".accDark");
+var searchButton = document.querySelector(".searchDark");
+// var accButton = document.querySelector(".Dark");
+
+console.log(alles);
+// console.log(nightButton);
 
 cycle.addEventListener("click", dawn);
 function dawn(){
     console.log("het word nacht in wakkerdam");
+    alles.classList.toggle("darkMode");
+
+    cycle.classList.toggle("cycleDay");
+    accButton.classList.toggle("userDay");
+    searchButton.classList.toggle("searchDay");
+    menu.classList.toggle("day");
 }
 
+
+// subPagina "toegankelijkheid" in menu
+var toegang = document.querySelector(".toegang");
+var accespage = document.querySelector(".accesibility")
+
+toegang.addEventListener("click", toegangPage);
+
+function toegangPage(){
+    console.log("toegangspagina")
+    accespage.classList.toggle("visable")
+}
+
+// fontgrootte veranderen
+var kleinFont = document.querySelector(".fontKlein");
+var middelFont = document.querySelector(".fontMiddel");
+var grootFont = document.querySelector(".fontGroot");
+
+kleinFont.addEventListener("click", kleinFontToggle);
+function kleinFontToggle(){
+    alles.classList.add("kleinFontAAN");
+    alles.classList.remove("middelFontAAN");
+    alles.classList.remove("grootFontAAN");
+    console.log("kleine letters");
+    accespage.classList.toggle("visable");
+    inhoud.classList.toggle("visable")
+}
+
+middelFont.addEventListener("click", middelFontToggle);
+function  middelFontToggle(){
+    alles.classList.add("middelFontAAN");
+    alles.classList.remove("kleinFontAAN");
+    alles.classList.remove("grootFontAAN");
+    console.log("middel letters");
+    accespage.classList.toggle("visable");
+    inhoud.classList.toggle("visable")
+}
+
+grootFont.addEventListener("click", grootFontToggle);
+function  grootFontToggle(){
+    alles.classList.add("grootFontAAN");
+    alles.classList.remove("kleinFontAAN");
+    alles.classList.remove("middelFontAAN");
+    console.log("grote letters");
+    accespage.classList.toggle("visable");
+    inhoud.classList.toggle("visable")
+}
 // animaties invoegen
+
+
+
+
+
+// prefers color scheme
+// @media (prefers-c)
+if (window.matchMedia){
+    console.log("continue");
+}
+
+if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+    console.log("shdflohawekfnl");
+    dawn();
+}
+//https://stackoverflow.com/questions/56393880/how-do-i-detect-dark-mode-using-javascript

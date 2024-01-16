@@ -17,16 +17,16 @@
 	<nav>
 		<a href="./index.html"><img src="./images/logo.svg" alt="logo of site"></a>
 		<div class="bar">
-			<button class="night">
+			<button class="night navDark">
 				<img src="./images/moon.png" alt="moon icon">
 			</button>
-			<button>
-				<img src="./images/search.svg" alt="user icon">
+			<button class="accDark navDark">
+				<img src="./images/user.svg" alt="user icon">
 			</button>
-			<button>
+			<button class="searchDark navDark">
 				<img src="./images/zoekglas.svg" alt="search">
 			</button>
-			<button class="burger">
+			<button class="burger navDark">
 				<img src="./images/menu.png" alt="menu">
 			</button>
 		</div>
@@ -91,7 +91,16 @@
 					<li><a href="#">Word aanvoerder</a></li>
 				</ul>
 			</div>
+			<!-- <a href="#">taalinstellingen</a> -->
+			<!-- <a href="#" class="menubutton">toegankelijkheid</a> -->
 			<button class="menubutton">taalinstellingen</button>
+			<button class="menubutton toegang">toegankelijkheid</button>
+			<div class="contentCollapsible visable accesibility">
+				<h2>lettergrootte</h2>
+				<button class="menubutton fontKlein">Klein</button>
+				<button class="menubutton fontMiddel">Middel</button>
+				<button class="menubutton fontGroot">Groot</button>
+			</div>
 		</div>
 	</nav>
 
@@ -223,11 +232,13 @@
 		</section>
 
 		<section>
+			<div>
 			<h2>Beurzen en evenementen</h2>
-			<a href="#" class="oranje">bekijk de agenda</a>
+			<a href="#" class="oranje">Bekijk de agenda</a>
 			<p>Jaarlijks organiseert Royal FloraHolland verschillende beurzen en evenementen voor onze verschillende
 				doelgroepen zowel nationaal als internationaal. Daarnaast nemen wij ook delen aan externe initiatieven
 				en sponsoren we mooie projecten.</p>
+			</div>
 			<article>
 				<img src="./images/Dag-van-de-Cooperatie-RFH.png" alt="poster cooperatie">
 				<div>

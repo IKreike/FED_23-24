@@ -18,9 +18,6 @@ body {
 
 
 
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -37,6 +34,7 @@ body {
 	--large-margin: 4em;
 	--small-margin: 2em;
 	--color-greyedOut: #606060;
+	--icon-color: black;
 	/* --font-size:; */
 }
 
@@ -95,15 +93,15 @@ a {
 	padding: 1em;
 }
 
-button:focus{
-	background-color: var(--brand-color);
+
+.button:focus, .button:active {
+	color: var(--color-text);
+	background-color: var(--color-accent);
 }
 
-a:focus{
+a:focus, a:active{
 	color: var(--color-accent);
-	background-color: var(--brand-color);
-}
-
+}	
 
 /* De code voor de pijltjes voor de links */
 a.groen::before {
@@ -155,9 +153,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
-	/* width: 100%; */
 	background-color: var(--color-secundair-background);
-	/* padding-top: 0; */
 	top: 0;
 	padding: .5em 1em;
 	z-index: 3;
@@ -179,10 +175,6 @@ nav a img {
 	justify-content: center;
 	align-items: center;
 	border: none;
-	/* fill: var(--color-text); */
-	/* fill: blue; */
-	/* color: blueviolet; */
-	/* background-color: chartreuse; */
 }
 
 .bar button img {
@@ -191,12 +183,245 @@ nav a img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* background-color: chartreuse; */
 }
 
-.kruisje img{
-	content: url(/images/close.png);
+
+
+/****************/
+/* menu button  animatie */
+/****************/
+.SVGmenuButton .top,
+.SVGmenuButton .middle,
+.SVGmenuButton .bottom {
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-duration: .2s;
 }
+
+.kruisje .SVGmenuButton .top {
+	animation-name: closing-menu-top;
+	transform-origin: 20px 50px;
+}
+
+.kruisje .SVGmenuButton .middle {
+	animation-name: closing-menu-middle;
+	opacity: 0;
+}
+
+.kruisje .SVGmenuButton .bottom {
+	animation-name: closing-menu-bottom;
+	transform-origin: 30px 50px;
+}
+
+@keyframes closing-menu-top {
+	0% {
+		translate: 0;
+	}
+
+	60% {
+		translate: 0 25px;
+	}
+
+	60% {
+		rotate: 0deg;
+	}
+
+	100% {
+		rotate: 45deg;
+	}
+}
+
+@keyframes closing-menu-middle {
+	0% {
+		opacity: 100;
+	}
+
+	59% {
+		opacity: 100;
+	}
+
+	60% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes closing-menu-bottom {
+	0% {
+		translate: 0;
+	}
+
+	60% {
+		translate: 0 -25px;
+	}
+
+	60% {
+		rotate: 0deg;
+	}
+
+	100% {
+		rotate: -45deg;
+	}
+}
+
+.SVGmenuButton .top {
+	animation-name: opening-menu-top;
+	transform-origin: 20px 50px;
+}
+
+.SVGmenuButton .middle {
+	animation-name: opening-menu-middle;
+}
+
+.SVGmenuButton .bottom {
+	animation-name: opening-menu-bottom;
+	transform-origin: 30px 50px;
+}
+
+@keyframes opening-menu-top {
+	100% {
+		translate: 0;
+	}
+
+	60% {
+		translate: 0 25px;
+	}
+
+	60% {
+		rotate: 0deg;
+	}
+
+	0% {
+		rotate: 45deg;
+	}
+}
+
+@keyframes opening-menu-middle {
+	100% {
+		opacity: 100;
+	}
+
+	60% {
+		opacity: 100;
+	}
+
+	59% {
+		opacity: 0;
+	}
+
+	0% {
+		opacity: 0;
+	}
+}
+
+@keyframes opening-menu-bottom {
+	100% {
+		translate: 0;
+	}
+
+	60% {
+		translate: 0 -25px;
+	}
+
+	60% {
+		rotate: 0deg;
+	}
+
+	0% {
+		rotate: -45deg;
+	}
+}
+
+
+
+/****************/
+/* darkmode svg (animatie) */
+/****************/
+.SVGdarkmode {
+	stroke-width: 5;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+}
+
+.SVGdarkmode .circle2 {
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+}
+
+.circle {
+	fill: var(--color-text);
+}
+
+.circle2 {
+	fill: var(--color-secundair-background);
+	stroke: none;
+	translate: 30px -30px;
+}
+
+.stralen {
+	stroke-dasharray: 30 2000;
+}
+
+.cycleDay .SVGdarkmode {
+	animation-name: nomoresun;
+}
+
+.SVGdarkmode {
+	animation-name: turnintosun;
+}
+
+@keyframes nomoresun {
+	0% {
+		stroke-dashoffset: 0;
+	}
+
+	100% {
+		stroke-dashoffset: 100;
+	}
+}
+
+@keyframes turnintosun {
+	100% {
+		stroke-dashoffset: 0;
+	}
+
+	0% {
+		stroke-dashoffset: 100;
+	}
+}
+
+.SVGdarkmode .circle2 {
+	animation-name: nomoremoon;
+}
+
+.cycleDay .SVGdarkmode .circle2 {
+	animation-name: turnintomoon;
+}
+
+@keyframes turnintomoon {
+	0% {
+		translate: 30px 30px;
+	}
+
+	100% {
+		translate: 0;
+	}
+}
+
+@keyframes nomoremoon {
+	100% {
+		translate: 30px 30px;
+	}
+
+	0% {
+		translate: 0;
+	}
+}
+
 
 
 /****************/
@@ -241,6 +466,9 @@ li {
 	top: 4em;
 	height: 100vh;
 	overflow-y: scroll;
+
+	translate: 0% -100%;
+	transition: 3s;
 }
 
 .navFooter {
@@ -253,10 +481,20 @@ li {
 	text-transform: uppercase;
 }
 
-.visable {
-	display: none;
+.mainMenu {
+	translate: 0% -108%;
+	transition: .5s;
+	z-index: -1;
 }
 
+.visable {
+	translate: 0% 0%;
+	/* bron: https://codepen.io/shooft/pen/ZEVYyMQ?editors=0110 */
+}
+
+.hidden {
+	display: none;
+}
 
 .menubutton {
 	background-color: var(--color-secundair-background);
@@ -274,14 +512,14 @@ li {
 	justify-content: space-between;
 }
 
-.menubutton p{
+.menubutton p {
 	font-family: "halyard-display", sans-serif;
 	font-weight: 700;
 	display: flex;
 	justify-content: space-between;
 }
 
-.menubutton div{
+.menubutton div {
 	background-color: var(--color-background);
 	width: 2em;
 	height: 2em;
@@ -295,8 +533,7 @@ li {
 /****************/
 /* subkopjes menu */
 /****************/
-
-.accesibility{
+.accesibility {
 	z-index: 2;
 	top: 0;
 }
@@ -306,7 +543,6 @@ li {
 /****************/
 /* header pagina 2 */
 /****************/
-
 .page2 {
 	background-image: none;
 	background-color: var(--color-background);
@@ -348,8 +584,13 @@ li {
 }
 
 @keyframes blaadjelinks {
-	0% {transform: rotate(0deg);}
-	100% {transform: rotate(-10deg);}
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(-10deg);
+	}
 }
 
 
@@ -381,8 +622,13 @@ li {
 }
 
 @keyframes blaadjeRechts {
-	0% {transform: rotate(0deg);}
-	100% {transform: rotate(10deg);}
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(10deg);
+	}
 }
 
 
@@ -451,7 +697,7 @@ article div {
 	margin: 1em;
 }
 
-.filled p{
+.filled p {
 	padding: 1em;
 }
 
@@ -463,10 +709,7 @@ article div {
 /* over ons artikelsn */
 /****************/
 .otherarticle {
-	/* background-color: blue; */
-	/* background-image: none; */
 	background-image: linear-gradient(to right, var(--color-niet) 10%, var(--color-secundair-background) 10%, var(--color-secundair-background) 90%, var(--color-niet) 90%);
-	/* margin-top: 2em; */
 }
 
 .otherarticle div {
@@ -494,8 +737,6 @@ article div {
 	background-color: var(--brand-color);
 	color: var(--color-secundair-background);
 	padding: 1em;
-	/* padding-top: 2em;
-	padding-bottom: 2em; */
 }
 
 .FAL h3 {
@@ -518,8 +759,6 @@ article div {
 /****************/
 section:nth-child(2) {
 	margin-top: 1em;
-	/* margin-bottom: 1em; */
-	/* margin: 1em; */
 }
 
 section:nth-child(2) h2 {
@@ -530,7 +769,6 @@ section:nth-child(2) h2 {
 /****************/
 /* rozen */
 /****************/
-
 section:nth-child(3) {
 	background-color: var(--color-secundair-background);
 	background-image: none;
@@ -546,9 +784,7 @@ section:nth-child(3) p {
 section:nth-child(3) img:nth-child(1) {
 	background-color: var(--color-background);
 	height: 6em;
-	/* width:fit-content; */
 	width: 100%;
-	/* transform: scale(550%, 1); */
 }
 
 
@@ -557,7 +793,6 @@ section:nth-child(3) img:nth-child(1) {
 /****************/
 section:nth-child(4) div {
 	padding: 1em;
-	/* margin-top: 4em; */
 }
 
 section:nth-child(4) p {
@@ -569,7 +804,6 @@ section:nth-child(4) p {
 /****************/
 /* potweb */
 /****************/
-
 .potweb {
 	background-color: var(--color-secundair-background);
 	background-image: none;
@@ -597,15 +831,12 @@ iframe {
 /****************/
 /* beurzen en evenementen */
 /****************/
-
 section:nth-child(6) {
 	margin-top: 4em;
 }
 
-section:nth-child(6) div:first-child{
-	/* background-color: hotpink; */
+section:nth-child(6) div:first-child {
 	padding: 1em;
-
 }
 
 section:nth-child(6) p {
@@ -620,11 +851,11 @@ section:nth-child(6) h2 {
 /****************/
 /* over royal floraholland */
 /****************/
-
 section:nth-child(7) {
 	padding-top: 6em;
 }
-section:nth-child(7) h2{
+
+section:nth-child(7) h2 {
 	padding-left: .5em;
 }
 
@@ -633,13 +864,12 @@ section:nth-child(7) h2{
 /****************/
 /* floriday */
 /****************/
-
 section:nth-child(8) {
 	padding: 1em;
 	background-color: var(--brand-color);
 }
 
-section:nth-child(8) p{
+section:nth-child(8) p {
 	padding-bottom: 1em;
 }
 
@@ -657,7 +887,6 @@ section:nth-child(8) a {
 /****************/
 /* footer */
 /****************/
-
 footer {
 	text-decoration: none;
 	display: grid;
@@ -807,14 +1036,13 @@ footer section ul:nth-of-type(1) li a {
 	font-family: "halyard-micro", sans-serif;
 }
 
-.active {
+.selected {
 	font-weight: 700;
 }
 
 /****************/
 /* collapsible */
 /****************/
-
 .collapsible h4 {
 	font-size: 1.8em;
 	padding: .5em;
@@ -847,7 +1075,7 @@ footer section ul:nth-of-type(1) li a {
 	display: none;
 }
 
-.OverOnsCollapsable img{
+.OverOnsCollapsable img {
 	padding-top: 2em;
 }
 
@@ -857,12 +1085,12 @@ footer section ul:nth-of-type(1) li a {
 	margin-bottom: 1em;
 }
 
-.OverOnsPijltje{
+.OverOnsPijltje {
 	align-self: center;
 }
 
 .draai {
-	transform:rotate(90deg);
+	transform: rotate(90deg);
 	transition: .2s;
 }
 
@@ -871,18 +1099,11 @@ footer section ul:nth-of-type(1) li a {
 	content: "-";
 }
 
-.active{
-	background-color: var(--brand-color);
-	color: var(--color-accent);
-}
 
 /****************/
 /* dark mode */
 /****************/
-
-.darkMode{
-	/* background-color: blue; */
-	/* color: aqua; */
+.darkMode {
 	--color-text: rgb(236, 235, 235);
 	--color-background: #606060;
 	--brand-color: rgb(92, 198, 141);
@@ -896,73 +1117,63 @@ footer section ul:nth-of-type(1) li a {
 
 
 /* font grootte veranderen met knoppen*/
-.kleinFontAAN{
+.kleinFontAAN {
 	font-size: small;
 }
 
-.middelFontAAN{
+.middelFontAAN {
 	font-size: medium;
 }
 
-.grootFontAAN{
+.grootFontAAN {
 	font-size: large;
 }
 
 
 
-
-
-.cycleDay {
-	content: url(/images/cycle-night.png);
-	/* <a target="_blank" href="https://icons8.com/icon/648/sun">Sun</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
-}
+/***** de knoppen in de menubalk veranderen tijdens darkmode *****/
 .userDay {
 	content: url(/images/user-night.svg);
 	width: 60%;
 	height: 60%;
 }
+
 .searchDay {
 	content: url(/images/zoekglasNacht.svg);
-	/* width: 3em;
-	height: 3em; */
 }
+
 .searchDay img {
 	width: 3em;
 	height: 3em;
 }
 
 
-.day {
-	content: url(/images/burger-night.svg);
-	/* <a target="_blank" href="https://icons8.com/icon/36389/menu">Hamburger Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
-}
-
-
-
-
-
-/* .navDark {
-
-} */
 
 
 
 
 /* surface plane */
 /* done */
-/* advanced positioning, te zien in main page page 2 */
+/* advanced positioning, te zien in main page page 2?? */
+/* 4. animatie */
+/* 1. lettergrootte aanpassen */
+/* 2. light/dark (bijna klaar, ik wil nog dat hij het automatish update op de pagina zelf)*/
+/* (is niet extra)animatie bij menus/collapsable */
+/* 3. svg animeren!!!! */
 
 
-/* possible */
-/* light/dark */
-/* animatie bij menus/collapsable */
-/* svg animeren? */
-/* states van website als geheel(UI-stack van Hurff)????? als ik weet wat het is */
+
+/* doing */
 /* States van controls?? */
 
 
-/* zeggen als ik echt niks heb */
-/* video (potweb) */
+
+/* possible */
+/* states van website als geheel(UI-stack van Hurff)????? als ik weet wat het is */
+
+
+/* moon sun animation: */
+/* https://web.dev/patterns/theming/theme-switch#css */
 
 
 /* 

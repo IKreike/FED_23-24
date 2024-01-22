@@ -18,7 +18,18 @@
 		<a href="./index.html"><img src="./images/logo.svg" alt="logo of site"></a>
 		<div class="bar">
 			<button class="night navDark">
-				<img src="./images/moon.png" alt="moon icon">
+				<!-- <img src="./images/moon.png" alt="moon icon"> -->
+				<svg stroke="var(--color-text)" viewBox="0 0 100 100" width="250px" class="SVGdarkmode">
+					<path class="circle" 
+						d="m 40 40 a 1 1 0 0 0 20 20 a 1 1 0 0 0 -20 -20">
+					</path>
+					<path class="stralen"
+						d="m 50 50 l 30 0 m -30 0 l 25 25 m -25 -25 l 0 30 m 0 -30 l -25 25 m 25 -25 l -30 0 m 30 0 l -25 -25 m 25 25 l 0 -30 m 0 30 l 25 -25">
+					</path>
+					<path class="circle2" 
+						d="m 50 30 a 1 1 0 0 0 20 20 a 1 1 0 0 0 -20 -20">
+					</path>
+				</svg>
 			</button>
 			<button class="accDark navDark">
 				<img src="./images/user.svg" alt="user icon">
@@ -27,17 +38,28 @@
 				<img src="./images/zoekglas.svg" alt="search">
 			</button>
 			<button class="burger navDark">
-				<img src="./images/menu.png" alt="menu">
+				<!-- <img src="./images/menu.png" alt="menu"> -->
+				<!-- <img src="./images/ZelfX.svg" alt="menu icon"> -->
+				<svg stroke="var(--color-text)" viewBox="0 0 100 100" width="250px" class="SVGmenuButton">
+					<!-- ik weet niet of de widht wel in de html mag -->
+					<!-- bron:https://www.youtube.com/watch?v=R00QiudbD4Y -->
+					<line class="line top" x1="10" x2="90" y1="25" y2="25" stroke-width="10">
+					</line>
+					<line class="line middle" x1="10" x2="90" y1="50" y2="50" stroke-width="10">
+					</line>
+					<line class="line bottom" x1="10" x2="90" y1="75" y2="75" stroke-width="10">
+					</line>
+				</svg>
 			</button>
 		</div>
-		<div class="contentCollapsible visable">
+		<div class="contentCollapsible mainMenu">
 			<button class="menubutton collapsible">
 				<p>Aanvoeren</p>
 				<div class="OverOnsPijltje">
 					<p>+</p>
 				</div>
 			</button>
-			<div class="visable">
+			<div class="visable hidden">
 				<ul>
 					<li><a href="#">marktplaats</a></li>
 					<li><a href="#">marktplaats</a></li>
@@ -53,7 +75,7 @@
 					<p>+</p>
 				</div>
 			</button>
-			<div class="visable">
+			<div class="visable hidden">
 				<ul>
 					<li><a href="#">marktplaats</a></li>
 					<li><a href="#">marktplaats</a></li>
@@ -69,7 +91,7 @@
 					<p>+</p>
 				</div>
 			</button>
-			<div class="visable">
+			<div class="visable hidden">
 				<ul>
 					<li><a href="./overOns.html">Over Ons</a></li>
 					<li><a href="#">marktplaats</a></li>
@@ -79,8 +101,12 @@
 					<li><a href="#">marktplaats</a></li>
 				</ul>
 			</div>
-			<button class="menubutton"><p>Service & contact</p></button>
-			<button class="menubutton"><p>Werken bij</p></button>
+			<button class="menubutton">
+				<p>Service & contact</p>
+			</button>
+			<button class="menubutton">
+				<p>Werken bij</p>
+			</button>
 
 
 			<div class="navFooter">
@@ -93,13 +119,13 @@
 			</div>
 			<!-- <a href="#">taalinstellingen</a> -->
 			<!-- <a href="#" class="menubutton">toegankelijkheid</a> -->
-			<button class="menubutton">taalinstellingen</button>
-			<button class="menubutton toegang">toegankelijkheid</button>
-			<div class="contentCollapsible visable accesibility">
+			<button class="menubutton"><p>taalinstellingen</p></button>
+			<button class="menubutton toegang"><p>toegankelijkheid</p></button>
+			<div class="contentCollapsible visable hidden accesibility">
 				<h2>lettergrootte</h2>
-				<button class="menubutton fontKlein">Klein</button>
-				<button class="menubutton fontMiddel">Middel</button>
-				<button class="menubutton fontGroot">Groot</button>
+				<button class="menubutton fontKlein"><p>Klein</p></button>
+				<button class="menubutton fontMiddel"><p>Middel</p></button>
+				<button class="menubutton fontGroot"><p>Groot</p></button>
 			</div>
 		</div>
 	</nav>
@@ -117,7 +143,7 @@
 
 
 	<main>
-		
+
 		<section class="FAL">
 			<h3>Meest bezochte pagina's</h3>
 			<ul>
@@ -233,11 +259,12 @@
 
 		<section>
 			<div>
-			<h2>Beurzen en evenementen</h2>
-			<a href="#" class="oranje">Bekijk de agenda</a>
-			<p>Jaarlijks organiseert Royal FloraHolland verschillende beurzen en evenementen voor onze verschillende
-				doelgroepen zowel nationaal als internationaal. Daarnaast nemen wij ook delen aan externe initiatieven
-				en sponsoren we mooie projecten.</p>
+				<h2>Beurzen en evenementen</h2>
+				<a href="#" class="oranje">Bekijk de agenda</a>
+				<p>Jaarlijks organiseert Royal FloraHolland verschillende beurzen en evenementen voor onze verschillende
+					doelgroepen zowel nationaal als internationaal. Daarnaast nemen wij ook delen aan externe
+					initiatieven
+					en sponsoren we mooie projecten.</p>
 			</div>
 			<article>
 				<img src="./images/Dag-van-de-Cooperatie-RFH.png" alt="poster cooperatie">

@@ -5,12 +5,16 @@ console.log("hi");
 var acc = document.getElementsByClassName("collapsible");
 var i;
 
+console.log(acc);
+
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
         var panel = this.nextElementSibling; 
+        // console.log(panel);
         var turning = this.querySelector(".OverOnsPijltje")
-        console.log(turning);
+        // console.log(turning);
         this.classList.toggle("active");
+        console.log(this);
         turning.classList.toggle("draai");
         if (panel.style.display === "block") {
             panel.style.display = "none";
@@ -21,6 +25,8 @@ for (i = 0; i < acc.length; i++) {
 }
 
 console.log(i);
+// dit is voor de menuknoppen, omdat het een andere animatie moet zijn
+
 
 
 // dit is weer eigen code
@@ -74,7 +80,7 @@ toegang.addEventListener("click", toegangPage);
 
 function toegangPage(){
     console.log("toegangspagina")
-    accespage.classList.toggle("visable")
+    accespage.classList.toggle("hidden")
 }
 
 // fontgrootte veranderen
@@ -88,8 +94,9 @@ function kleinFontToggle(){
     alles.classList.remove("middelFontAAN");
     alles.classList.remove("grootFontAAN");
     console.log("kleine letters");
-    accespage.classList.toggle("visable");
+    accespage.classList.toggle("hidden");
     inhoud.classList.toggle("visable")
+    menu.classList.toggle("kruisje")
 }
 
 middelFont.addEventListener("click", middelFontToggle);
@@ -98,8 +105,9 @@ function  middelFontToggle(){
     alles.classList.remove("kleinFontAAN");
     alles.classList.remove("grootFontAAN");
     console.log("middel letters");
-    accespage.classList.toggle("visable");
+    accespage.classList.toggle("hidden");
     inhoud.classList.toggle("visable")
+    menu.classList.toggle("kruisje")
 }
 
 grootFont.addEventListener("click", grootFontToggle);
@@ -108,8 +116,9 @@ function  grootFontToggle(){
     alles.classList.remove("kleinFontAAN");
     alles.classList.remove("middelFontAAN");
     console.log("grote letters");
-    accespage.classList.toggle("visable");
+    accespage.classList.toggle("hidden");
     inhoud.classList.toggle("visable")
+    menu.classList.toggle("kruisje")
 }
 // animaties invoegen
 

@@ -57,8 +57,6 @@ a {
 	font-weight: 400;
 	font-style: normal;
 	color: var(--color-text);
-	/* blijkbaar ging hij met deze alles overscrijven */
-	/* color: var(--color-text); */
 }
 
 
@@ -94,14 +92,16 @@ a {
 }
 
 
-.button:focus, .button:active {
-	color: var(--color-text);	
+.button:focus,
+.button:active {
+	color: var(--color-text);
 	background-color: var(--color-accent);
 }
 
-a:focus, a:active{
+a:focus,
+a:active {
 	color: var(--color-accent);
-}	
+}
 
 /* De code voor de pijltjes voor de links */
 a.groen::before {
@@ -145,7 +145,6 @@ p {
 /****************/
 /* header(navbar) styling */
 /****************/
-
 nav {
 	width: 100vw;
 	height: 4em;
@@ -600,7 +599,6 @@ li {
 	mask-image: url("/images/leaf-right.svg");
 	width: 70%;
 	height: 50vh;
-	/* height: 4em; */
 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -641,7 +639,6 @@ li {
 /****************/
 /* article styling */
 /****************/
-
 article {
 	max-height: fit-content;
 	margin-top: 2em;
@@ -663,7 +660,6 @@ time {
 	grid-row: 1;
 	font-size: 0.8em;
 	margin: 0;
-	/* ello? why no work */
 	text-transform: uppercase;
 }
 
@@ -676,7 +672,6 @@ h3 {
 article a {
 	font-weight: 700;
 	color: var(--color-links);
-	/* font-size: 1.2em; */
 	margin: 0;
 	font-family: "halyard-micro", sans-serif;
 	text-transform: uppercase;
@@ -690,7 +685,6 @@ article div {
 /****************/
 /* other article styling */
 /****************/
-
 .filled {
 	background-color: var(--color-secundair-background);
 	background-image: none;
@@ -733,7 +727,6 @@ article div {
 /****************/
 /* Frequently Asked Links */
 /****************/
-
 .FAL {
 	background-color: var(--brand-color);
 	color: var(--color-secundair-background);
@@ -1149,24 +1142,8 @@ footer section ul:nth-of-type(1) li a {
 
 
 /* surface plane */
-/* done */
-/* advanced positioning, te zien in main page page 2?? */
-/* 4. animatie */
 /* 1. lettergrootte aanpassen */
 /* 2. light/dark (bijna klaar, ik wil nog dat hij het automatish update op de pagina zelf)*/
-/* (is niet extra)animatie bij menus/collapsable */
 /* 3. svg animeren!!!! */
-/* 5. States van controls?? */
-
-
-
-/* doing */
-
-
-
-/* possible */
-/* states van website als geheel(UI-stack van Hurff)????? als ik weet wat het is */
-
-
-/* moon sun animation: */
-/* https://web.dev/patterns/theming/theme-switch#css */
+/* 4. animatie */
+/* 5. States van controls */

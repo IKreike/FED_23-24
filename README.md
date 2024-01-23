@@ -240,6 +240,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
+## Herkansing
+<details>
+  <summary>Herkansing</summary>
+
+  ### Je uitkomst - karakteristiek screenshots:
+  https://ikreike.github.io/FED_23-24/ 
+  <img src="./readme-images/final-home.jpg" width="375px" alt="einduitwerking homepage">
+  <img src="./readme-images/final-menu.jpg" width="375px" alt="einduitwerking menu">
+  <img src="./readme-images/final-contact.jpg" width="375px" alt="einduitwerking contact">
+  <img src="./readme-images/final-contact-dark.jpg" width="375px" alt="einduitwerking contact-darkmode">
+
+
+  ### Dit ging goed/Heb ik geleerd: 
+  Naast wat ik eerder heb geleerd en gedaan, heb ik bij de herkansing veel geleerd en extra dingen gedaan. Ik ben vooral trots op het animeren van SVG's, een skill die ik eerder niet had. 
+  <!-- <video scr="./readme-images/SVGanimatie.mp4" width="375px" alt="SVGanimatie"> -->
+  <img src="./readme-images/SVGanimatie.mp4" width="375px" alt="SVGanimatie">
+  
+
+
+  ### Dit was lastig/Is niet gelukt:
+  Korte omschrijving met plaatjes
+  Om een of andere reden (heb ik niet uit kunnen vinden) werken sommige afbeeldingen/svg's niet in de online versie, maar wel in de direct server. Specifiek, de plaatjes account en search in de menubalk (nightmode) en de animatie op de over ons pagina. Ik weet niet waar dit aan ligt. Zover ik kan zien kloppen de src van de plaatjes en zijn de geupload op github. Ik had al eerder gemerkt dat de plaatjes in de menubalk niet kon aanspreken met css om ze op de juiste grootte te krijgen, dus ik vermoed dat dit verband met elkaar heeft. 
+  <img src="/readme-images/bummer1.png" width="375px" alt="direct server-zoals het hoort">
+  <img src="/readme-images/bummer2.png" width="375px" alt="online server-er missen dingen">
+
+</details>
+
+
 
 
 ## Bronnenlijst
@@ -256,7 +284,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. https://cssgridgarden.com/#nl 
   3. https://www.w3schools.com/css/css3_masking.asp
   5. https://www.w3schools.com/howto/howto_js_collapsible.asp
-
-  https://stackoverflow.com/questions/16302045/finding-child-element-of-parent-with-javascript
+  6. https://www.w3schools.com/howto/howto_js_accordion.asp
+  7. https://codepen.io/shooft/pen/ZEVYyMQ?editors=0110
+  8. https://www.youtube.com/watch?v=R00QiudbD4Y
+  9. https://stackoverflow.com/questions/16302045/finding-child-element-of-parent-with-javascript
 
 </details>
